@@ -1,7 +1,8 @@
 
 import LoadingBar from 'react-top-loading-bar'
 
-const Loader = (props) => {
+
+const Loader = (props: any) => {
   
 
   return (
@@ -10,7 +11,7 @@ const Loader = (props) => {
 
         color='#67d835'
         progress={props.progress}
-        onLoaderFinished={() => props.setProgress(0)}
+        onLoaderFinished={() => props.SetProgress(0)}
 
       />
 
