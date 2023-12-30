@@ -9,7 +9,7 @@ export default function Testimonials() {
             <div className="overflow-hidden" >
                 <div className="relative max-w-[85rem] px-4  sm:px-6 lg:px-8 pb-20 mx-auto">
 
-                    <div className="text-center max-w-2xl w-3/4 lg:w-1/2 mb-6 pt-7 sm:mb-10 md:mb-16">
+                    <div className="text-center  mb-6 pt-7 sm:mb-10 md:mb-16">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center text-gray-500  font-semibold">
                             Loved by business and individuals 
                         </h2>
