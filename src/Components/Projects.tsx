@@ -3,7 +3,7 @@ export default function Projects() {
   return (
     <>
    
-<div className="container my-3 mx-auto md:px-6">
+<div className="container my-3 mx-auto px-6">
   
   <section className="mb-10 mt-10 text-center lg:text-left">
     <h2 className="mb-12 text-center text-3xl font-bold">
