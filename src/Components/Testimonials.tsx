@@ -35,7 +35,7 @@ export default function Testimonials() {
 
                                         <div className="grow ms-3 text-white">
                                             <p className="text-white text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
-                                                Josh Tyson
+                                                Joshz Tyson
                                             </p>
                                             <p className="text-white text-xs text-gray-500 dark:text-gray-400">
                                                 Product Manager | Capsule
