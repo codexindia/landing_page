@@ -106,23 +106,23 @@ export default function Testimonials() {
 
                     <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
 
-                        <div>
-                            <h4 className="text-lg sm:text-xl font-semibold text-white">Accuracy rate</h4>
-                            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">99.95%</p>
+                        <div className="text-indigo">
+                            <h4 className="text-lg sm:text-xl font-semibold text-indigo">Accuracy rate</h4>
+                            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-black-500">99.95%</p>
                             <p className="mt-1 text-gray-400">in fulfilling orders</p>
                         </div>
 
 
                         <div>
-                            <h4 className="text-lg sm:text-xl font-semibold text-white">Startup businesses</h4>
-                            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">2,000+</p>
+                            <h4 className="text-lg sm:text-xl font-semibold text-indigo">Startup businesses</h4>
+                            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo">2,000+</p>
                             <p className="mt-1 text-gray-400">partner with Preline</p>
                         </div>
 
 
                         <div>
-                            <h4 className="text-lg sm:text-xl font-semibold text-white">Happy customer</h4>
-                            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">85%</p>
+                            <h4 className="text-lg sm:text-xl font-semibold text-indigo">Happy customer</h4>
+                            <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo">85%</p>
                             <p className="mt-1 text-gray-400">this year alone</p>
                         </div>
 
