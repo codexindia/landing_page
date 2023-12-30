@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import LoadingBar from 'react-top-loading-bar'
 
 const Loader = (props) => {
