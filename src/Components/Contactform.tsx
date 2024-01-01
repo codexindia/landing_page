@@ -3,14 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 export default function ContactForm() {
-  const initialvalues = {
-    fname: "",
-    lname: "",
-    email: "",
-    mobileNumber: "",
-    message: "",
-    recaptha: "",
-  };
+  
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
@@ -23,7 +16,7 @@ export default function ContactForm() {
   let handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      console.log(recaptha);
+      console.log(recaptha+name+lastname+email+mobileNumber+message);
     } catch (err) {
       console.log(err);
     }
