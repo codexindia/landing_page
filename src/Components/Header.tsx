@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../Image/logo.png'
-import { Link, NavLink } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import Loader from './Loader'
 const navigation = [
   { name: 'Home', href: '/' },
