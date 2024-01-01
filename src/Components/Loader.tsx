@@ -12,7 +12,7 @@ const Loader = (props: any) => {
         color='#67d835'
         progress={props.progress}
         onLoaderFinished={() => props.SetProgress(0)}
-
+        loaderSpeed={300}
       />
 
     </div>

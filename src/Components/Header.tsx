@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../Image/logo.png'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Loader from './Loader'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Products', href: '#' },
-  { name: 'Portfolio', href: '#' },
+  { name: 'Products', href: '/product' },
+  { name: 'Portfolio', href: '/portfolio' },
 ]
 
 export default function Header() {
@@ -25,7 +25,8 @@ export default function Header() {
   }, []);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <><Loader SetProgress={setProgress} progress={progress} />
+    <>
+    <Loader SetProgress={setProgress} progress={progress} />
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -50,9 +51,9 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.href} className="hover:text-green-400	 text-sm font-semibold leading-6 text-gray-900">
+              <NavLink key={item.name} to={item.href}  className='hover:text-green-400 text-sm font-semibold leading-6 text-gray-900'>
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">

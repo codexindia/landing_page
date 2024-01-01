@@ -9,6 +9,7 @@ export default function Contact() {
        
             <Header />
             <div className='hero'>
+           
                 <div
                     className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                     aria-hidden="true"
@@ -23,6 +24,7 @@ export default function Contact() {
                 </div>
             </div>
             <Contactform></Contactform>
+           
             <Footer />
         </>
     )

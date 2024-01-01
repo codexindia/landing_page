@@ -22,7 +22,9 @@ body {
     background-color: green;
     color: white;
   }
-  
+a.active{
+    color:#00bc75;
+}
 .text-gradi {
     background: -webkit-linear-gradient(#6bd53f, #99f174);
     -webkit-background-clip: text;
