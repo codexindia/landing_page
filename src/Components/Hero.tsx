@@ -1,10 +1,9 @@
 
 
 export default function Hero() {
- 
+
   return (
     <div className='hero'>
-
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -44,9 +43,9 @@ export default function Hero() {
               Your digital journey is about to take off! Swipe left to finalize details and launch your project with CodexIndia, we specialize in crafting innovative and powerful online experiences tailored to your unique needs.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              
+
               <button
-                
+
                 className="rounded-md bg-indigo px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo"
               >
                 Contact Us

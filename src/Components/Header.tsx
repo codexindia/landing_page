@@ -1,20 +1,32 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../Image/logo.png'
+import { Link } from 'react-router-dom'
+import Loader from './Loader'
 const navigation = [
-  { name: 'About Us', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Contact', href: '/contact' },
   { name: 'Products', href: '#' },
   { name: 'Portfolio', href: '#' },
 ]
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [progress, setProgress] = useState(50);
+  useEffect(() => {
+    setTimeout(function () {
+      setProgress(90);
+    }, 1000);
+    setTimeout(function () {
+
+      setProgress(100)
+    }, 1100);
+  }, []);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    
-    <header className="absolute inset-x-0 top-0 z-50">
+    <><Loader SetProgress={setProgress} progress={progress} />
+      <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -38,9 +50,9 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="hover:text-green-400	 text-sm font-semibold leading-6 text-gray-900">
+              <Link key={item.name} to={item.href} className="hover:text-green-400	 text-sm font-semibold leading-6 text-gray-900">
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -96,5 +108,8 @@ export default function Header() {
           </Dialog.Panel>
         </Dialog>
       </header>
+    </>
   )
 }
+
+
