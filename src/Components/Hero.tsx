@@ -32,7 +32,7 @@ export default function Hero() {
             <div className="mt-5 max-w-2xl text-center mx-auto">
               <h1 className="block font-bold text-black-800 text-4xl md:text-5xl lg:text-6xl ">
                 Let's Build
-                <span className="bg-clip-text bg-gradient-to-tl  text-gradi">Together</span>
+                <span className="bg-clip-text bg-gradient-to-tl  text-gradi"> Together</span>
               </h1>
             </div>
 

@@ -7,7 +7,7 @@ export default function Projects() {
   
   <section className="mb-10 mt-10 text-center lg:text-left">
     <h2 className="mb-12 text-center text-3xl font-bold">
-      Projects we are proud of
+      Our Recent Projects
     </h2>
 
     <div className="grid gap-x-6 lg:grid-cols-3 lg:gap-x-12">
