@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../Image/logo.png'
-import {  NavLink } from 'react-router-dom'
+import {  Link, NavLink } from 'react-router-dom'
 import Loader from './Loader'
 const navigation = [
   { name: 'Home', href: '/' },
@@ -13,6 +13,8 @@ const navigation = [
 ]
 
 export default function Header() {
+  document.documentElement.classList.add('light');
+  localStorage.setItem('color-theme', 'light');
   const [progress, setProgress] = useState(50);
   useEffect(() => {
     setTimeout(function () {
@@ -30,14 +32,14 @@ export default function Header() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">CodexIndia</span>
               <img
                 className="h-8 w-auto"
                 src={logo}
                 alt=""
               />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
