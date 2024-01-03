@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import reactlogo from '../image/Frameworks/react.svg'
+import reactlogo from '../Image/Frameworks/react.svg'
 import firebaselogo from '../Image/Frameworks/firebase.svg'
 import laravellogo from '../Image/Frameworks/laravel.svg'
 import onesignallogo from '../Image/Frameworks/onesignal.svg'
