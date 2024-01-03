@@ -8,7 +8,7 @@ import Loader from './Loader'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Products', href: '/product' },
+  { name: 'Products', href: '/service' },
   { name: 'Portfolio', href: '/portfolio' },
 ]
 

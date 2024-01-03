@@ -1,6 +1,6 @@
 
 import { Footer } from 'flowbite-react';
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTelegram } from 'react-icons/bs';
 import logo from '../Image/logo.png';
 export default function Footers() {
 
@@ -13,7 +13,7 @@ export default function Footers() {
         <div className="grid md:px-20 w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <Footer.Brand
-              href="https://flowbite.com"
+              href="https://codexindia.com"
               src={logo}
               alt=""
               name=""
@@ -49,7 +49,7 @@ export default function Footers() {
           <div className="mt-4 sm:flex md:px:10 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitter} />
+            <Footer.Icon href="https://t.me/codexindia" icon={BsTelegram} />
             <Footer.Icon href="#" icon={BsGithub} />
             <Footer.Icon href="#" icon={BsDribbble} />
           </div>

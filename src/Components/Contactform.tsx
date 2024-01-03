@@ -3,20 +3,35 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 export default function ContactForm() {
-  
+
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [message, setMessage] = useState("");
   const [recaptha, setRecaptha] = useState("");
+  const [button, setbutton] = useState(true);
+  const [error, Seterror] = useState("");
   function onChange(value: any) {
+    setbutton(false)
+    console.log(recaptha)
     setRecaptha(value);
   }
   let handleSubmit = async (e: any) => {
+    if (name == null || lastname == "" || email == "" || mobileNumber.length != 10 || message == "") {
+      Seterror("error")
+      console.log('error');
+    } else {
+      Seterror("")
+      console.log('success' + name)
+    }
+
+
     e.preventDefault();
     try {
-      console.log(recaptha+name+lastname+email+mobileNumber+message);
+
+
+
     } catch (err) {
       console.log(err);
     }
@@ -39,9 +54,29 @@ export default function ContactForm() {
           <div className="mt-12 grid  items-center lg:grid-cols-2 gap-6 lg:gap-16">
 
             <div className="flex flex-col bg-white border border-gray-300 rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
-              <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
+
+
+
+              <h2 className="mb-8 text-xl text-center font-semibold text-gray-800 dark:text-gray-200">
                 Fill in the form
               </h2>
+
+              {/* error */}
+              {error ? (
+                <div role="alert" className="mb-5">
+                  <div className="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+                    Opps
+                  </div>
+                  <div className="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                    <p>Check All Field Before Submit</p>
+                  </div>
+                </div>
+              ) : (
+                <></>
+              )
+              }
+              {/* error */}
+
 
               <form onSubmit={handleSubmit}>
                 <div className="grid gap-4">
@@ -58,7 +93,6 @@ export default function ContactForm() {
                     </div>
                   </div>
 
-
                   <div>
                     <label htmlFor="hs-email-contacts-1" className="sr-only">Email</label>
                     <input type="email" onChange={(e) => setEmail(e.target.value)} name="hs-email-contacts-1" id="hs-email-contacts-1" autoComplete="email" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-green-400 focus:ring-green-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Email" />
@@ -68,6 +102,10 @@ export default function ContactForm() {
                     <label htmlFor="hs-phone-number-1" className="sr-only">Phone Number</label>
                     <input type="text" onChange={(e) => setMobileNumber(e.target.value)} name="hs-phone-number-1" id="hs-phone-number-1" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-green-400 focus:ring-green-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Phone Number" />
                   </div>
+
+
+                 
+
 
                   <div>
                     <label htmlFor="hs-about-contacts-1" className="sr-only">Details</label>
@@ -81,7 +119,7 @@ export default function ContactForm() {
                 />,
 
                 <div className="grid">
-                  <button type="submit" className="hover:bg-green-400 w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Send inquiry</button>
+                  <button type="submit" disabled={button} className="hover:bg-green-400 w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Send inquiry</button>
                 </div>
 
                 <div className="mt-3 text-center">
