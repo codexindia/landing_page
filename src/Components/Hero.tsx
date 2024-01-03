@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-//import reactlogo from '../Image/frameworks/react-2.svg'
-import firebaselogo from '../Image/frameworks/firebase-1.svg'
-import laravellogo from '../Image/frameworks/laravel-2.svg'
+import reactlogo from '../Image/frameworks/react.svg'
+import firebaselogo from '../Image/frameworks/firebase.svg'
+import laravellogo from '../Image/frameworks/laravel.svg'
 import onesignallogo from '../Image/frameworks/onesignal.svg'
-import reactNativlogo from '../Image/frameworks/react-native-1.svg'
+import reactNativlogo from '../Image/frameworks/reactnative.svg'
 import vitejslogo from '../Image/frameworks/vitejs.svg'
 export default function Hero() {
 
@@ -86,10 +86,10 @@ export default function Hero() {
         </div>
 
         <div className="grid grid-cols-2 text-center sm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 lg:gap-6">
-          {/* <div className="p-4  md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
+          <div className="p-4  md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
             <img src={reactlogo} alt="" className="pb-5 max-w-16 mx-auto" />
             <span className="text-gray-600 ">React JS</span>
-          </div> */}
+          </div>
 
           <div className="p-4 md:p-7 bg-gray-100 rounded-lg dark:bg-slate-800">
             <img src={laravellogo} alt="" className="max-w-16 mx-auto pb-6" />
