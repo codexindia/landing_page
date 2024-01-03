@@ -14,7 +14,7 @@ export default function ContactForm() {
   const [error, Seterror] = useState("");
   function onChange(value: any) {
     setbutton(false)
-    console.log(recaptha)
+    console.log(recaptha);
     setRecaptha(value);
   }
   let handleSubmit = async (e: any) => {
