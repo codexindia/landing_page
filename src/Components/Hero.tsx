@@ -8,7 +8,7 @@ import vitejslogo from '../Image/Frameworks/vitejs.svg'
 export default function Hero() {
 
   return (
-    <div className='hero'>
+    <div className='hero s'>
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
