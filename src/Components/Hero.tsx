@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import reactlogo from '../Image/frameworks/react.svg'
-import firebaselogo from '../Image/frameworks/firebase.svg'
-import laravellogo from '../Image/frameworks/laravel.svg'
-import onesignallogo from '../Image/frameworks/onesignal.svg'
-import reactNativlogo from '../Image/frameworks/reactnative.svg'
-import vitejslogo from '../Image/frameworks/vitejs.svg'
+import reactlogo from '../image/Frameworks/react.svg'
+import firebaselogo from '../Image/Frameworks/firebase.svg'
+import laravellogo from '../Image/Frameworks/laravel.svg'
+import onesignallogo from '../Image/Frameworks/onesignal.svg'
+import reactNativlogo from '../Image/Frameworks/reactnative.svg'
+import vitejslogo from '../Image/Frameworks/vitejs.svg'
 export default function Hero() {
 
   return (
