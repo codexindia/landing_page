@@ -5,7 +5,7 @@ import Footers from '../Components/Footer';
 
 import Projects from '../Components/Projects';
 import Team from '../Components/Team';
-import Testimonials from '../Components/Testimonials';
+//import Testimonials from '../Components/Testimonials';
 
 export default function Home() {
    
@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <Team />
-        <Testimonials />
+        {/* <Testimonials /> */}
       
         <Footers />
   
