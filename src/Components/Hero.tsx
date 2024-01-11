@@ -87,32 +87,32 @@ export default function Hero() {
         </div>
 
         <div className="grid grid-cols-2 text-center sm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 lg:gap-6">
-          <div className="  bg-gray-100 rounded-lg dark:bg-slate-800">
-            <img src={reactlogo} alt="" className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-15 mx-auto" style={{width:'8rem'}} />
-           
-          </div>
+          <div className="bg-gray-100 rounded-lg dark:bg-slate-800">
+            <img src={reactlogo} alt="" className="py-3 lg:py-5 h-auto md:w-30 lg:w-30 mx-auto" />
 
-          <div className=" bg-gray-100 rounded-lg dark:bg-slate-800">
-            <img src={laravellogo} alt="" className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-15 mx-auto" style={{width:'8rem'}}/>
+          </div>
+          
+          <div className="bg-gray-100 rounded-lg dark:bg-slate-800">
+            <img src={laravellogo} alt="" className=" py-3 lg:py-5  h-auto md:w-30 lg:w-30 mx-auto" />
             
           </div>
 
           <div className=" bg-gray-100 rounded-lg dark:bg-slate-800">
-            <img src={firebaselogo} alt="" className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-15 mx-auto" style={{width:'8rem'}}/>
+            <img src={firebaselogo} alt="" className=" py-3 lg:py-5  h-auto md:w-30 lg:w-30 mx-auto" />
            
           </div>
 
           <div className=" bg-gray-100 rounded-lg dark:bg-slate-800">
-            <img src={digitaloceanlogo} alt="" className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-15 mx-auto" style={{width:'8rem'}}/>
+            <img src={digitaloceanlogo} alt="" className=" py-3 lg:py-5  h-auto md:w-30 lg:w-30 mx-auto" />
            
           </div>
 
          
           <div className=" bg-gray-100 rounded-lg dark:bg-slate-800">
-            <img src={mysqllogo} alt="" className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-15 mx-auto" style={{width:'8rem'}}/>
+            <img src={mysqllogo} alt="" className=" py-3 lg:py-5  h-auto md:w-30 lg:w-15 mx-auto" />
            
           </div>
-        
+
         </div>
 
 
