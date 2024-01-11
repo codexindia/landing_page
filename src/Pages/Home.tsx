@@ -4,7 +4,8 @@ import Hero from '../Components/Hero';
 import Footers from '../Components/Footer';
 
 import Projects from '../Components/Projects';
-import Team from '../Components/Team';
+//import Team from '../Components/Team';
+import Testimonials from '../Components/Testimonials';
 //import Testimonials from '../Components/Testimonials';
 
 export default function Home() {
@@ -15,8 +16,8 @@ export default function Home() {
         <Header />
         <Hero />
         <Projects />
-        <Team />
-        {/* <Testimonials /> */}
+        {/* <Team /> */}
+        <Testimonials />
       
         <Footers />
   
